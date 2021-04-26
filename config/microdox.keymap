@@ -12,8 +12,6 @@
 /* #include "accented_letters.dtsi" */
 /* #include "tapdances.dtsi" */
 #include "definitions.dtsi"
-#include "microdox.conf"
-#include "microdox.dtsi"
 #include "microdox_right.overlay"
 
 / {
