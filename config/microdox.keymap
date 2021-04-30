@@ -17,7 +17,7 @@
 
                 default_layer {
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P
+&kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P
    HM_A  HM_S  HM_D  HM_F  &kp G    &kp H HM_J   HM_K      HM_L    HM_SEMI 
    &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
           &mo SYM &kp TAB &kp LC(C) &kp K_PP &kp SPACE &mo NUM 
@@ -54,7 +54,7 @@
                 nav_layer {
                         bindings = <
    BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans   
-   &kp LGUI   &kp LALT   &kp LCTRL  &LSHFT    &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  
+   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT    &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  
    &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans  
                          &trans     &trans    &trans      &trans    &trans    &trans  
                         >;
