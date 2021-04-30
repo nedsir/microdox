@@ -2,8 +2,8 @@
 #define MAIN 0
 #define SYM 1
 #define NUM 2
-#define ACC 3
-#define NAV 4
+/* #define ACC 3 */
+#define NAV 3
 
 //homerow
 #define HM_A &hm_asemi LGUI A
