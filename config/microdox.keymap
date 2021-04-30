@@ -12,7 +12,6 @@
 /* #include "accented_letters.dtsi" */
 /* #include "tapdances.dtsi" */
 #include "definitions.dtsi"
-#include "microdox_right.overlay"
 
 / {
         keymap {
@@ -29,7 +28,7 @@
 
                 sym_layer {
                         bindings = <
-   &trans       &trans     &kp EQUAL &degr     &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
+   &trans       &trans     &kp EQUAL &trans    &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
    &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
    &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH
                            &trans    &trans    &trans     &trans   &kp UNDER &mo NAV
@@ -61,8 +60,6 @@
    &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans  
                          &trans     &trans    &trans      &trans    &trans    &trans  
                         >;
-
-                     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
                 };
 
