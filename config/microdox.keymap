@@ -7,9 +7,126 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "combos.dtsi"
+/* #include "combos.dtsi" */
 #include "homerow.dtsi"
-#include "definitions.dtsi"
+/* #include "definitions.dtsi" */
+
+// layers
+#define MAIN 0
+#define SYM 1
+#define NUM 2
+/* #define ACC 3 */
+#define NAV 3
+
+//homerow
+#define HM_A &hm_asemi LGUI A
+#define HM_S &hm_sl LALT S
+#define HM_D &hm_dk LCTRL D
+#define HM_F &hm_fj LSHFT F
+#define HM_G &hm_gh ACC G
+#define HM_SEMI &hm_asemi LGUI SEMI
+#define HM_L &hm_sl LALT L
+#define HM_K &hm_dk LCTRL K
+#define HM_J &hm_fj LSHFT J
+#define HM_H &hm_gh ACC H
+
+//bluetooth
+#define BT0 &bt BT_SEL 0 
+#define BT1 &bt BT_SEL 1 
+#define BT2 &bt BT_SEL 2 
+#define BT3 &bt BT_SEL 3 
+#define BT4 &bt BT_SEL 4 
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_bspc {
+            timeout_ms = <50>;
+            key_positions = <17 18>;
+            bindings = <&kp BSPC>;
+        };
+
+        combo_sqt {
+            timeout_ms = <50>;
+            key_positions = <27 28>;
+            bindings = <&kp SQT>;
+        };
+
+        combo_ret {
+            timeout_ms = <50>;
+            key_positions = <28 29>;
+            bindings = <&kp RET>;
+        };
+
+        combo_esc {
+            timeout_ms = <50>;
+            key_positions = <13 14>;
+            bindings = <&kp ESC>;
+        };
+
+        combo_cc {
+            timeout_ms = <50>;
+            key_positions = <23 24>;
+            bindings = <&kp LC(C)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        hm_asemi: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <220>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_sl: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <220>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_dk: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <170>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_fj: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_gh: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <160>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&mo>, <&kp>;
+        };
+    };
+};
 
 / {
         keymap {
