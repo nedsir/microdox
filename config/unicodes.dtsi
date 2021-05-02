@@ -2,7 +2,7 @@
     behaviors {
         deg: deg {
             compatible = "zmk,behavior-macro";
-            label = "IBUS_DEG";
+            label = "IBUS_POO";
             #binding-cells = <0>;
             bindings = <&kp RA(U)>, <&kp N0>, <&kp N0>, <&kp B>, <&kp N0>;
         }
