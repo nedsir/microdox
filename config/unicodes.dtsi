@@ -1,0 +1,8 @@
+/ {
+    deg: deg {
+        compatible = "zmk,behavior-macro";
+        label = "IBUS_DEG";
+        #binding-cells = <0>;
+        bindings = <&kp RA(U)>, <&kp N0>, <&kp N0>, <&kp B>, <&kp N0>;
+    };
+};
