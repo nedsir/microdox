@@ -10,7 +10,7 @@
 #include "combos.dtsi"
 #include "homerow.dtsi"
 #include "definitions.dtsi"
-#include "unicode.dtsi"
+#include "unicodes.dtsi"
 
 
 / {
